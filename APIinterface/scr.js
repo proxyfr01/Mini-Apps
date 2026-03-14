@@ -57,7 +57,7 @@ ${question}
 ],
 
 generationConfig:{
-temperature:0.3
+temperature:0.4
 }
 
 })
@@ -67,6 +67,8 @@ temperature:0.3
 );
 
 const data = await response.json();
+// const data = await reaponse.json();
+
 
 const text =
 data.candidates[0].content.parts[0].text;
